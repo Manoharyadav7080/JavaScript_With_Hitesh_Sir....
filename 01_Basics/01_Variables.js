@@ -10,7 +10,7 @@ let accountState;
 // Var variable are not flow block Scope  and functional Scope ("{ }"). if change variable value the reflect it every Scope and file ;
 /*
 Prefer not to use Var 
-because of issue in block Scope and functional Scope 
+because of issue in block Scope and functional Scope.
 */
 
 
