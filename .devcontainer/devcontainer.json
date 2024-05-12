@@ -1,0 +1,4 @@
+// this is a Environment file which is Allow :-
+// The devcontainer.json file is typically used in development environments with Visual Studio Code and is part of the Visual Studio Code Remote - Containers extension. It defines the development container's configuration, specifying the runtime environment, dependencies, extensions, and other settings needed for development.
+
+{"image":"mcr.microsoft.com/devcontainers/universal:2"}
