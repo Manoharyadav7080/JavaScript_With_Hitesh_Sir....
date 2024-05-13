@@ -50,6 +50,71 @@ let stringNumber = String(someNumber);
 console.log(stringNumber , typeof stringNumber);
 
 
+// *******************************************  Opration *************************************************
+ 
+
+
+let value = 3; 
+let NegValue = -value ;
+console.log(NegValue);
+
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**2); // 2^2
+// console.log(2%2);
+// console.log(2/2);
+
+
+let str1 = "Hello";
+let str2 = " manohar";
+let str3 = str1 + str2 ;
+console.log(str3); // Hello manohar
+
+// BUT 
+
+console.log(1 + "2"); // 12  (How)
+console.log("2" +1);//   21  (How)
+console.log("2" +2 + 2); //  222
+//BUT 
+console.log(2 + 2 + "2"); //  42  (How)  =====>  this are everything possible by the ECMA Script;
+
+
+
+// Tricky Question 
+
+  console.log(+true); // 1
+  //conole.log(true+1) // not allowed 
+  console.log(+""); // 0
+
+
+  let num1 , num2 , num3 ;
+  num1 = num2 = num3 =2+2; // this allowed in js but basically  can should follow readability;
+
+
+
+//   Expressions - Increment operator
+// Link :- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment
+let x = 3;
+const y = x++;
+
+console.log(`x:${x}, y:${y}`);
+// Expected output: "x:4, y:3"
+
+let a = 3;
+const b = ++a;
+
+console.log(`a:${a}, b:${b}`);
+// Expected output: "a:4, b:4"
+
+
+
+
+
+
+
+
 
 
 
