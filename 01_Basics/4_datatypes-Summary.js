@@ -33,9 +33,9 @@ const bigNumber = 312793013237769993781222071n;
 // 2. Non primitive ( call by refrence => basically ye ooo value hai jo ki direct memory me enka reference allocate kiya ja sakta hai ;  )
            
             /* 
-                  Array
-                  Objects
-                  functio 
+                  1.Array
+                  2.Objects
+                  3.function 
             
                   Note :- if (JavaScript masters) {
                             objects master + web or  browser events masters;
@@ -67,6 +67,47 @@ console.log( typeof bigNumber); // bigint
 
 
 // Note :- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof
+
+
+
+
+// ********************************************************************************************
+
+//   Memory :- 
+    /* 
+    
+    Stack(primitive data type )
+    Heap (Non-primitive data type)
+
+    Ex:- 
+    */
+
+//  For primitive dataType 
+
+let  myname =  "Manohar Yadav";
+let anothername = myname; // Coppy of myname ----->   Manohar Yadav 
+console.log(anothername);
+
+anothername ="ChaiaurCode";
+console.log(myname); // Manohar Yadav 
+console.log(anothername);  // ChaiaurCode 
+
+
+// For Non-Primitive dataType
+ 
+let user = {
+    email: "yadavmanohar78094@gmail.com",
+    upi: "user@ybl"
+}
+
+let anotherUser = user;
+anotherUser.email = "yadavhima7080@gmail.com";
+// then ---
+
+console.log(user.email);// yadavhima7080@gmail.com
+console.log(anotherUser.email); // yadavhima7080@gmail.com
+
+
 
 
 
