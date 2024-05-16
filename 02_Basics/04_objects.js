@@ -139,6 +139,205 @@ console.log(tinderUser1.hasOwnProperty('isLogged')) // false
 
 
 
+// Lecture 18  
+
+//  es lectur  me :-  function kya kya offer kar sakte hai choti si 1 or 2 chiz offer karte hai , then API par move karenge thoda sa genral over viwe dekhenge ki API kya hoti hai  how it work 
+
+
+// *************************************************    DeStructureing :- Array ki bhi hoti hai and Object ki bhi   ******************************************************
+
+
+//  par abhi kewal Objects  ki deStructure dekhenge array ko baad me dekhenge .....
+// this are very interesting jo sabko aaani chahiye , yeee kam aap bahut baaar karenge  for Ex:- react padhenge to waha se ek obj mlega to usako deStructur ekarke usake value lena pade ga  direct leee sakte hai par deStructure karne se thoda sa easy hoga ;
+// abhi react ka bhi ek Ex ke thros baata denge ke kaese value aaati hai and usako kaese deStucture karte hai 
+
+
+const course ={
+
+    CourseName :"js inn hindi ",
+    price : "999" ,
+    courseInstructor:"Hitesh_sir",
+    courseviwer:"manohar"
+}
+
+console.log(course.courseInstructor);//  Hitesh_sir  
+//                         OR 
+
+
+// this is a deStructure concep......👇🏾
+
+ const  {courseInstructor} = course; // mtb 👇🏾
+//const {kya value Extract karna hai} = kha se Extract karna hai ; 
+// ab jab bhi codeInstructor ka use karna hai to direct courseInstructor use kar sakte hai ;
+
+console.log(courseInstructor); // Hitesh_sir
+
+//                      Other Methods ........................
+
+const{courseviwer: presentsViwer} = course; // Explation 👇🏾
+/* 
+ presentsViwer (apne hisab se name de sakte hai jaese aaap courseviwer ko bhi use nahi karna chate hai to aap dusara name de sakte hai for Ex :-  presentsViwer diye hai )
+
+*/
+console.log( presentsViwer);  // manohar
+
+
+
+
+// **********************************************  In react me deStructureing    ******************************************
+/* 
+const nevbar= ({company}) =>  {
+                  👆🏾 mtb props , ab kahi bhi ({ }) dekhenge to mtb deStuctureing ki ja rhi hai 
+
+}
+
+navbar(company= "Google")
+
+*/
+
+// ***************************************************************************************************************************
+
+
+//                                                        API      
+/*
+
+  JSON structure......... (esame key and value dono String formate me hota hai )
+
+
+
+  {
+
+  "firstName": "John",
+  "lastName": "Doe",
+  "age": 30,
+  "email": "john.doe@example.com",
+  "address": {
+    "street": "123 Main St",
+    "city": "Anytown",
+    "state": "CA",
+    "postalCode": "12345"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "555-555-1234"
+    },
+    {
+      "type": "work",
+      "number": "555-555-5678"
+    }
+  ]
+}
+
+
+
+This JSON structure includes:
+
+Basic personal details like `firstName`, `lastName`, `age`, and `email`.
+An `address`  object with nested details.
+A `phoneNumbers`  array containing objects for different types of phone numbers.
+
+
+      //   OR 
+
+
+      not click this link only know about JSON formats  file 
+{
+  "message": "Not Found",
+  "documentation_url": "https://docs.github.com/rest/users/users#get-a-user"
+}
+
+
+Note :-  
+    ab chuki hame objects ki understanding aaaati hai to es JSON file ko object me badal ke  ek- ek value use kar lunga etna hi to kaam hai api ka ;
+
+
+
+
+// use this link for random API :-  https://randomuser.me/
+
+ Other JSON structure..... (for Understanding )
+  {
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "Miss",
+        "first": "Jennie",
+        "last": "Nichols"
+      },
+      "location": {
+        "street": {
+          "number": 8929,
+          "name": "Valwood Pkwy",
+        },
+        "city": "Billings",
+        "state": "Michigan",
+        "country": "United States",
+        "postcode": "63104",
+        "coordinates": {
+          "latitude": "-69.8246",
+          "longitude": "134.8719"
+        },
+        "timezone": {
+          "offset": "+9:30",
+          "description": "Adelaide, Darwin"
+        }
+      },
+      "email": "jennie.nichols@example.com",
+      "login": {
+        "uuid": "7a0eed16-9430-4d68-901f-c0d4c1c3bf00",
+        "username": "yellowpeacock117",
+        "password": "addison",
+        "salt": "sld1yGtd",
+        "md5": "ab54ac4c0be9480ae8fa5e9e2a5196a3",
+        "sha1": "edcf2ce613cbdea349133c52dc2f3b83168dc51b",
+        "sha256": "48df5229235ada28389b91e60a935e4f9b73eb4bdb855ef9258a1751f10bdc5d"
+      },
+      "dob": {
+        "date": "1992-03-08T15:13:16.688Z",
+        "age": 30
+      },
+      "registered": {
+        "date": "2007-07-09T05:51:59.390Z",
+        "age": 14
+      },
+      "phone": "(272) 790-0888",
+      "cell": "(489) 330-2385",
+      "id": {
+        "name": "SSN",
+        "value": "405-88-3636"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/75.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/75.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+      },
+      "nat": "US"
+    }
+  ],
+  "info": {
+    "seed": "56d27f4a53bd5441",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}
+
+
+
+
+ */
+
+
+
+
+ 
+
+
+
+
+
 
 
 
