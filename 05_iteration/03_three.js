@@ -114,6 +114,22 @@ Return :-
 
 */
 
+// Oter Exampal     
+console.log("Other Exampal");
+const map = new Map();
+map.set('IN', "India")
+map.set('USA' , "United Stae of America");
+console.log(map);
+
+/*  Expected Output 
+
+
+Map(2) { 'IN' => 'India', 'USA' => 'United Stae of America' }
+
+
+
+*/
+
 
 
 // _________________________________       is print objects  ?    _________________________________
@@ -129,7 +145,12 @@ for(const  [key , value] of myObjects) {
     console.log(key , ` :` , value);
 }
 
-// error :- myObjects is not iterable 
+// error :- myObjects is not iterable  (map iterable hai par Object iterable nahi hai. esako karne ke dusate tarike hote hai jo 04_Four me hai  )
+
+
+
+
+
 
 
 
