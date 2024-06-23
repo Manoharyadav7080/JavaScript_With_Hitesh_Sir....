@@ -32,7 +32,7 @@ while (arr <myArray.length) {
 
 
 // these is exception case ;  
-let score =11;
+let score =1;
 do {
     console.log(`score is ${score}`);
     score++;
