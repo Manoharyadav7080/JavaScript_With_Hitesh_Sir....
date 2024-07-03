@@ -12600,7 +12600,9 @@ The questions provided in this repository are the summary of frequently asked qu
 
 Good luck with your interview 😊
 >## follow me :- 
-- <a href="https://leetcode.com/u/Manohar9935/">Linkdin</a> 
-- <a href="">GitHub</a> 
+>>- <a href="https://www.linkedin.com/in/manohaharyadav/">Linkdin</a> 
+>>- <a href="https://leetcode.com/u/Manohar9935/">leetcode</a> 
+>>- <a href="https://github.com/Manoharyadav7080">GitHub</a> 
+
 
 ---
