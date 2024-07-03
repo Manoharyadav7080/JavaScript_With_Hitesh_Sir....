@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a first page </title>
+ </head>
+ <body>
+    <h1 >This is a first page</h1>
+    <button id="button">  Stop</button> 
+    
+ </body>
+ <script>
+
+  // _________________________________________      SetTimeOut  (callback , time )     ________________________________________________
+    let ChanegeText = function (){
+        document.querySelector('h1').innerHTML =  " Hii Manohar Yadav this is frist page "
+    };
+    setTimeout( ChanegeText, 2000);
+
+    // setTimeout(()=> {},2000)
+    // setTimeout(function (){} , 2000)
+
+
+// __________________________________________________________     SetInterval (  callback ,  time ) ______________________________
+
+
+    // setInterval( ()=> {
+    //     console.log("callback function ")
+    // }, 2000)
+
+
+// _______________________________________ As like a project    --------->  Stop setInterval () ________________________________________
+   const StopMe = setInterval( ()=> {
+      console.log("Hii Manohar Yadav");
+   } , 3000)
+   document.querySelector('#button').addEventListener('click' , ()=> {
+      clearTimeout(StopMe);
+      console.log("STOPPED");
+   })
+
+
+
+
+// setInterval(function(){} , Time);
+//   OR 
+// setInterval(()=> {}, Time);
+
+ </script>
+ </html>

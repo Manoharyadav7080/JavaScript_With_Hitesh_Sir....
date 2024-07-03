@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Start and Stop of setInterval </h1>
+    <button id="Stop" >Stop</button>
+    <button id="Start" >Start</button>
+</body>
+<script>
+    const ChangeME = setInterval(() => {
+        console.log("Hello EveryOne")
+    }, 3000);
+
+
+// __________________________________    Stop button ________________________
+
+    document.querySelector('#Stop').addEventListener('click' , ()=> {
+        clearTimeout(ChangeME);
+        console.log("Stop");
+    } )
+
+  // _______________________________    Start button ____________________________________
+  
+    document.querySelector('#Start').addEventListener('click' , function (){
+        setInterval(() => {
+        console.log("Hello EveryOne")
+    }, 3000);
+    })
+
+</script>
+</html>
